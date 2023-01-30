@@ -1,0 +1,77 @@
+{
+  "name": "@webextension-toolbox/webextension-toolbox",
+  "version": "5.2.2",
+  "description": "Framework for WebExtensions (Firefox, Chrome, Opera, Edge)",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": "git@github.com:webextension-toolbox/webextension-toolbox.git",
+  "author": "Henrik Wenz <HaNdTriX@gmail.com> (https://github.com/HaNdTriX)",
+  "contributors": [
+    {
+      "name": "Dávid Balatoni",
+      "email": "balcsida@gmail.com",
+      "url": "https://github.com/balcsida"
+    },
+    {
+      "name": "Andrew Nagy",
+      "url": "https://github.com/tm1000"
+    }
+  ],
+  "license": "MIT",
+  "bin": {
+    "webextension-toolbox": "./bin/webextension-toolbox"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts ./src"
+  },
+  "standard": {
+    "globals": [
+      "browser",
+      "chrome"
+    ],
+    "ignore": [
+      "**/dist",
+      "**/node_modules"
+    ]
+  },
+  "dependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/runtime": "^7.20.1",
+    "@webextension-toolbox/webpack-webextension-plugin": "^2.1.3",
+    "babel-loader": "^9.1.0",
+    "browserslist": "^4.21.4",
+    "case-sensitive-paths-webpack-plugin": "^2.4.0",
+    "commander": "^9.4.1",
+    "copy-webpack-plugin": "^11.0.0",
+    "find-up": "^5.0.0",
+    "glob": "^8.0.3",
+    "ts-loader": "^9.4.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
+    "webpack": "^5.74.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-watched-glob-entries-plugin": "^2.2.5",
+    "webpackbar": "^5.0.2",
+    "zip-webpack-plugin": "^4.0.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.3",
+    "@types/case-sensitive-paths-webpack-plugin": "^2.1.6",
+    "@types/firefox-webext-browser": "^94.0.1",
+    "@types/webpack-watched-glob-entries-plugin": "^2.1.3",
+    "@types/zip-webpack-plugin": "^3.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": "^14.15.0 || >=16.0.0"
+  }
+}

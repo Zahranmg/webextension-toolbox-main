@@ -1,0 +1,6 @@
+/examples
+/.github
+azure-pipelines.yml
+renovate.json
+.travis.yml
+/assets
